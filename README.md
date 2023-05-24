@@ -25,7 +25,7 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="./resources/images/readMe/wu.png" alt="Logo" width="80" height="80">
+  <img src="./images/readMe/wu.png" alt="Logo" width="80" height="80">
   <h3 align="center">Circle Landing Agency Website</h3>
   <a href="https://midterm-project.vercel.app/">Visit Website</a>
 </div>
@@ -57,7 +57,7 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 ## Acerca del Proyecto
 
-<img src="./resources/images/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
+<img src="./images/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
 Este proyecto es el primer proyecto desarrollado plenamente desde cero (bajo indicaciones/requisitos previas a seguir).
 
