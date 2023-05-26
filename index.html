@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
@@ -13,38 +14,46 @@
 
     <section id="nav-section">
         <header id="nav-bar">
-            <nav id="mid-nav">
-                <img src="./images/logos/circle.svg" alt="Circle_logo">
-                <ul>
-                    <li>Home</li>
-                    <li>Project Page - Simple</li>
-                    <li>Projects</li>
-                    <li>Services</li>
-                    <li>About</li>
-                </ul>
-                <a id="nav-contac" href="./contactUs.html">Contac Us</a>
+            <nav>
+                <div id="nav-logo">
+                    <a href="index.html"><img src="./images/logos/circle.svg" alt="Circle_logo"></a>
+                </div>
+                <div id="nav-links">
+                    <ul>
+                        <a href="#home">Home</a>
+                        <a href="project.html">Project Page - Simple</a>
+                        <a href="#project-title">Projects</a>
+                        <a href="#services">Services</a>
+                        <a href="./aboutUs.html">About</a>
+                    </ul>
+                </div>
+                <div id="contact-btn">
+                    <a href="./contactUs.html">Contac Us</a>
+                </div>
             </nav>
         </header>
     </section>
 
 <!-- Front page section     -->
 
-    <section id="frontPage">
-        <div id="text-box">
-            <h1>Empower Your Business With Stunning Design!</h1>
-            <p>Circle is a digital design and development studio.
-                We design and develop astonishing websites and mobile apps.</p>
-            <div id="fp-buttons-container" >
-                <a id="fp-btn-blue" href="">Get in touch</a>
-                <a id="fp-btn-link" href="">See our work</a>
-            </div>
+    <section id="frontPage-section">
+        <div id="frontPage">
+            <div id="text-box">
+                <h1>Empower Your Business With Stunning Design!</h1>
+                <p>Circle is a digital design and development studio.
+                    We design and develop astonishing websites and mobile apps.</p>
+                <div id="fp-buttons-container" >
+                    <a id="fp-btn-blue" href="">Get in touch</a>
+                    <a id="fp-btn-link" href="">See our work</a>
+                </div>
             
-        </div>
-        <div>
-            <img id="visa-img" src="./images/hero-section/card-1.png" alt="Credict Card image">
-            <img id="Customer-img" src="./images/hero-section/hero-image.png" alt="Happy customer image">
-            <img id="approved-emoji-img" src="./images/hero-section/card-2.png" alt="Approved emoji image">
-        </div>
+            </div>
+            <div id="front-page-images">
+                <img id="visa-img" src="./images/hero-section/card-1.png" alt="Credict Card image">
+                <img id="customer-img" src="./images/hero-section/hero-image.png" alt="Happy customer image">
+                <img id="approved-emoji-img" src="./images/hero-section/card-2.png" alt="Approved emoji image">
+            </div>
+        </div>    
     </section>
 
 <!-- Brands board section -->
@@ -60,6 +69,7 @@
             <img src="./images/logos/fedex-logo.svg" alt="Fedex-image-logo">
         </div>
     </section>
+
 
 <!-- Cards API Section -->
 
@@ -156,31 +166,31 @@
 <!-- Footer Section -->
 
     <footer>
-        <div id="footer-logo">
-            <img src="./images/logos/circle.svg" alt="Circle logo image">
-        </div>    
-        <div id="footer-add">
-            <p>2972 Westheimer Rd. Santa Ana,
-                Illinois 85486</p>
-        </div>
-        <div id="footer-links">
-            <ul id="ul-links">
-                <li>Team</li>
-                <li>Services</li>
-                <li>About Us</li>
-                <li>Press</li>
-                <li>Projects</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </div>
-    </footer>
-
-<!-- Scroll to up section -->
-
-    <div>
-        <h3 onclick="toUpFunction()" id="scrollBtn" >Scroll to up ↑ </h3>
+        <div id="footer-container">
+            <div id="footer-logo">
+                <img src="./images/logos/circle.svg" alt="Circle logo image">
+            <!-- </div>    
+            <div id="footer-add"> -->
+                <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
+            </div>
+            <div id="footer-links">
+                <ul id="ul-links">
+                    <a href="error404">Team</a>
+                    <a href="#services">Services</a>
+                    <a href="aboutUs.html">About Us<br></a>
+                    <a href="error404">Press</a>
+                    <a href="#project-title">Projects</a>
+                    <a href="error404">Privacy Policy</a>
+                </ul>
+            </div>
+        </footer>
     </div>
-
+<!-- Scroll to up section -->
+    <section>
+        <div id="btnContainer">
+        <h3 onclick="toUpFunction()" id="scrollBtn" >Scroll to up ↑ </h3>
+        </div>
+    </section>
 <!-- Scripts zone     -->
 <script src="./js/index.js"></script>
 <script src="./js/scrollButton.js"></script>

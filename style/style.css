@@ -30,19 +30,103 @@ body {
 
 /* ------------------------------ Navbar ------------------------------ */
 
-/* Your CSS code goes here */
+#nav-section {
+  padding: 5vmax 10vmax;
+}
 
-/* ------------------------------ Header ------------------------------ */
 
-/* Your CSS code goes here */
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+#nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: grey;
+  padding-right: 2rem;
+}
+
+#nav-links a:hover {
+  cursor: pointer;
+  color: aqua;
+}
+
+
+#contact-btn a {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 1rem 2.1rem;
+}
+
+#contact-btn a:hover{
+  background-color:gray;
+}
+
+/* ------------------------------ Front Page ------------------------------ */
+
+#frontPage-section {
+  padding-left: 19vmax;
+  padding-right: 15vmax;
+}
+
+#frontPage {
+  display: flex;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+#customer-img {
+   height: 33rem;
+}
+
+#visa-img {
+  height: 20rem;
+}
+
+#approved-emoji-img {
+  height: 20rem;
+}
 
 /* ------------------------------ Partners ------------------------------ */
 
-/* Your CSS code goes here */
+#brands-img-container img {
+  width: 150px;
+}
 
 /* ------------------------------ Recent projects ------------------------------ */
+#api-cards-container {
+  display: flex;
+  justify-content: center; 
+  text-align: center;
+  align-items: center;
+  
+}
 
-/* Your CSS code goes here */
+.api-cards {
+  width: 300px;
+  margin: 0 2rem 0 2rem;
+}
+
+/*código en caso de querer "recortar" la cantidad de texto mostrada en cada "card" */
+
+/* .line-limit p {
+  white-space: nowrap ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+.api-img {
+  height: 300px;
+  width: 300px;
+}
 
 /* ------------------------------ Client reviews ------------------------------ */
 
@@ -58,7 +142,33 @@ body {
 
 /* ------------------------------ Footer ------------------------------ */
 
-/* Your CSS code goes here */
+footer {
+  padding: 8rem 26rem;
+}
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#footer-logo p {
+  font-weight: 200;
+  color: grey;
+  padding-top: 2rem;
+}
+#footer-logo img {
+  height: 2rem;
+}
+
+#footer-links a {
+  font-weight: 500;
+  color: blue;
+  text-decoration: none;
+  padding-right: 2rem;
+
+}
 
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ PROJECT html ------------------------------ */
@@ -102,23 +212,50 @@ body {
 
 /* ------------------------------ Alert ------------------------------ */
 
-/* Your CSS code goes here */
+#alert-done {
+  background-color: green;
+  color: white;
+  display: none;
+  top: 0;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+#alert-fail {
+  background-color: red;
+  color: white;
+  display: none;
+  top: 0;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.8rem;
+  width: 100%;
+}
 
 /* ------------------------------ Sticky scroll bar ------------------------------ */
 
+/* #scroll-btn-container {
+/* display: none; */
+/* position: sticky; */
+
+
+
+
 #scrollBtn {
-    background-color: black;
-    color: white;
-    display: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 0.8rem;
+  background-color: black;
+  color: white;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem;
 }
 
 #scrollBtn:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }

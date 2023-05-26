@@ -5,23 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Circle</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+
+<!--Form Alert Section  -->
+
+<div id="alert-done" this>
+    <p>Thank you! Your data have been send</p>
+</div>
+
+<div id="alert-fail">
+    <p>Ups!... :( something gone wrong</p>
+</div>
 
 <!-- Navigation bar     -->
 
 <section id="nav-section">
     <header id="nav-bar">
-        <nav id="mid-nav">
-            <img src="./images/logos/circle.svg" alt="Circle_logo">
-            <ul>
-                <li>Home</li>
-                <li>Project Page - Simple</li>
-                <li>Projects</li>
-                <li>Services</li>
-                <li>About</li>
-            </ul>
-            <a id="nav-contac" href="./contactUs.html">Contac Us</a>
+        <nav>
+            <div id="nav-logo">
+                <a href="index.html"><img src="./images/logos/circle.svg" alt="Circle_logo"></a>
+            </div>
+            <div id="nav-links">
+                <ul>
+                    <a href="#home">Home</a>
+                    <a href="project.html">Project Page - Simple</a>
+                    <a href="#project-title">Projects</a>
+                    <a href="#services">Services</a>
+                    <a href="./aboutUs.html">About</a>
+                </ul>
+            </div>
+            <div id="contact-btn">
+                <a href="./contactUs.html">Contac Us</a>
+            </div>
         </nav>
     </header>
 </section>
@@ -31,10 +48,10 @@
 <section id="contactUs-section">
     <div class="contactUs-title">
         <h1>Contact Us</h1>
-        <div id="contact-form" class="form-container">
-            <form id="contactUs-form" action="">
+        <div  id="contact-form" class="form-container">
+            <form name="contactUsForm" id="contactUs-form" onsubmit="return validationForm()">
                 <label for="name">Full Name *</label>
-                <input id="name" type="text" placeholder="Enter your full name" required="">
+                <input id="name" type="text" placeholder="Enter your full name" name="fullName" required>
                 <div class="email-phone-div">
                     <div>
                         <label for="email">Email</label>
@@ -42,11 +59,11 @@
                     </div>
                     <div>
                         <label for="phone">Phone</label>
-                        <input id="phone" type="text" placeholder="Enter your phone">
+                        <input id="phone" type="text" placeholder="Enter your phone"  maxlength="9">
                     </div>
                 </div>
                     <label for="message">Message *</label>
-                    <textarea placeholder="Write your message here..." maxlength="2000" id="message" required=""></textarea>
+                    <textarea placeholder="Write your message here..." maxlength="2000" id="message" required></textarea>
                     <button type="submit" id="contactUs-submit-btn">Submit</button>
             </form>
         </div>
@@ -56,32 +73,33 @@
 <!-- Footer Section -->
 
 <footer>
-    <div id="footer-logo">
-        <img src="./images/logos/circle.svg" alt="Circle logo image">
-    </div>    
-    <div id="footer-add">
-        <p>2972 Westheimer Rd. Santa Ana,
-            Illinois 85486</p>
-    </div>
-    <div id="footer-links">
-        <ul id="ul-links">
-            <li>Team</li>
-            <li>Services</li>
-            <li>About Us</li>
-            <li>Press</li>
-            <li>Projects</li>
-            <li>Privacy Policy</li>
-        </ul>
-    </div>
-</footer>
-
-<div>
-    <h3 onclick="toUpFunction()" id="scrollBtn">Scroll to up ↑ </h3>
+    <div id="footer-container">
+        <div id="footer-logo">
+            <img src="./images/logos/circle.svg" alt="Circle logo image">
+        <!-- </div>    
+        <div id="footer-add"> -->
+            <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
+        </div>
+        <div id="footer-links">
+            <ul id="ul-links">
+                <a href="error404">Team</a>
+                <a href="#services">Services</a>
+                <a href="aboutUs.html">About Us<br></a>
+                <a href="error404">Press</a>
+                <a href="#project-title">Projects</a>
+                <a href="error404">Privacy Policy</a>
+            </ul>
+        </div>
+    </footer>
 </div>
+<!-- Scroll to up section -->
+<section>
+    <div id="btnContainer">
+    <h3 onclick="toUpFunction()" id="scrollBtn" >Scroll to up ↑ </h3>
+    </div>
+</section>
 
-<!-- Scripts zone     -->
-
+<script src="./js/contact.js"></script>
 <script src="./js/scrollButton.js"></script>
-
 </body>
 </html>
