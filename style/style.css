@@ -12,6 +12,13 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f2f4fc;
+}
+
+section,
+footer {
+  max-width: 1200px;
+  margin: auto;
 }
 
 
@@ -31,13 +38,15 @@ body {
 /* ------------------------------ Navbar ------------------------------ */
 
 #nav-section {
-  padding: 5vmax 10vmax;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 
 nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
 }
@@ -69,14 +78,10 @@ nav {
 
 /* ------------------------------ Front Page ------------------------------ */
 
-#frontPage-section {
-  padding-left: 19vmax;
-  padding-right: 15vmax;
-}
-
 #frontPage {
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -95,24 +100,82 @@ h1 {
   height: 20rem;
 }
 
+#fp-buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+#fp-btn-blue {
+  background-color:#072ac8;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 1rem 1rem;
+}
+
+#fp-btn-link {
+  color: grey;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 1rem 1rem;
+}
+
 /* ------------------------------ Partners ------------------------------ */
+
+
+#brands-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 #brands-img-container img {
   width: 150px;
+  filter: grayscale(1);
+}
+
+#brands-img-container img:hover {
+  filter: grayscale(0);
 }
 
 /* ------------------------------ Recent projects ------------------------------ */
 #api-cards-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  
+  margin-bottom: 8rem;
 }
 
-.api-cards {
-  width: 300px;
-  margin: 0 2rem 0 2rem;
+.title {
+  margin: 100px 0 75px 0;
+}
+
+.title h2 {
+  font-size: 2.5rem;
+}
+
+.api-cards > h3,
+.api-cards > h4,
+.api-cards > p {
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+
+#learn-more {
+  font-weight: 500;
+  color: blue;
+  text-decoration: none;
+}
+
+.api-cards {  
+  width: 330px;
+  height: 500px; 
+  background-color: white;
+  margin: 0 1.5rem 2rem 0;
+  text-align: left;
 }
 
 /*código en caso de querer "recortar" la cantidad de texto mostrada en cada "card" */
@@ -124,17 +187,106 @@ h1 {
 } */
 
 .api-img {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 330px;
 }
 
 /* ------------------------------ Client reviews ------------------------------ */
 
-/* Your CSS code goes here */
+#customer-box {
+  background-color: #292e47;
+  background-image: url(../images/testimonial-section/orbit.png);
+  background-size: cover;
+  height: 500px;
+  max-width: 1200px;
+  
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+#testimonials h2 {
+  font-weight: 700;
+  color: white;
+
+}
+
+#testimonials p:first-child{
+  color: gold;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+#testimonials p:nth-child(2){
+  color: cornflowerblue;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+#testimonials p:nth-child(3) {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+#profile-review div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#profile-review >p {
+  color:aqua;
+}
+
+#profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
 
 /* ------------------------------ Services ------------------------------ */
 
-/* Your CSS code goes here */
+/* #services h2 {
+  font-size: 2rem;
+  margin: 1vmax 10vmax;
+} */
+
+#services-card-container  {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+
+.services-cards {
+  background-color: white;
+  width: 330px;
+  margin: 0 1.5rem 2rem 0;
+  text-align: left;
+  height: 250px
+}
+
+.sc-image{
+  width: 70px;
+  height: 70px;
+  background-color: #ecf6ff;
+  border-radius: 100px;
+  margin: 1rem 0 0 1rem;
+}
+
+.sc-image img{ 
+  margin: 1rem 0 0 1rem;
+}
+
+.services-cards > h4,
+.services-cards > p,
+.services-cards > a {
+  padding: 0.5rem 1rem 1rem 1rem;
+}
 
 /* ------------------------------ Questions form ------------------------------ */
 
@@ -142,32 +294,36 @@ h1 {
 
 /* ------------------------------ Footer ------------------------------ */
 
-footer {
-  padding: 8rem 26rem;
-}
-
 #footer-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 #footer-logo p {
   font-weight: 200;
   color: grey;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 #footer-logo img {
   height: 2rem;
+}
+
+#footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 3rem;
 }
 
 #footer-links a {
   font-weight: 500;
   color: blue;
   text-decoration: none;
-  padding-right: 2rem;
-
 }
 
 /* -------------------------------------------------------------------------- */
@@ -203,8 +359,132 @@ footer {
 
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
-  /* Your CSS code goes here */
+
+/* Nav bar mobile */
+
+
+/* Front Page */
+
+#frontPage-section {
+margin: 3rem 2rem 5rem 3rem;
 }
+
+#frontPage div {
+  width: 95%;
+}
+
+#text-box > h1 {
+  font-size: 1.8rem;
+}
+
+#text-box > p {
+  color: grey;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 30px 0 50px 0;
+}
+
+#customer-img {
+   height: 220px;
+}
+
+#visa-img {
+  display: none;
+}
+
+
+#approved-emoji-img {
+  display: none;
+}
+
+
+
+/* Projects mobile */  
+
+
+#api-cards-container {
+  flex-direction: column;
+}
+
+.api-img {
+  height: 210px;
+  width: 300px;
+}
+
+.api-cards {
+  margin: 0 0rem 1rem 0rem;
+  width: 300px;
+  height: 470px;
+}
+
+/* Brands */
+
+#brands-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 1rem 0rem 1rem;
+}
+
+
+#brands-img-container img {
+  display: block;
+  margin: auto;
+  filter: grayscale(0);
+  width: 100px;
+  margin-bottom: 2rem;
+}
+
+/* services mobile */
+
+
+.services-cards {
+  width: 300px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+/* footer mobile */
+
+  #footer-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8rem 1rem 8rem 2rem;
+  }
+
+  #footer-logo p {
+    font-weight: 200;
+    color: grey;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #footer-logo img {
+    display: block;
+    margin: auto;
+    height: 2rem;
+  }
+  
+  #footer-links {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    text-align: center;
+  }
+
+/* Help form section */
+
+ #help-form {
+  background-color: gold;
+  height: 360px;
+ }
+ 
+
+
+}
+
+
+
+
 
 /* ------------------------------ Hamburguer menu ------------------------------ */
 
