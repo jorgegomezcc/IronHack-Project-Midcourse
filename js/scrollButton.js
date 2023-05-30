@@ -16,7 +16,9 @@ const scrollFunction = () => {
 
 //on click function
 
-const toUpFunction = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+const toUpFunction = () => {          
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    })
 }

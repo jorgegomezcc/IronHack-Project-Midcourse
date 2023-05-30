@@ -13,6 +13,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
+  font-weight: 300;
 }
 
 section,
@@ -103,6 +104,7 @@ h1 {
 #fp-buttons-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 #fp-btn-blue {
@@ -153,9 +155,6 @@ h1 {
   margin: 100px 0 75px 0;
 }
 
-.title h2 {
-  font-size: 2.5rem;
-}
 
 .api-cards > h3,
 .api-cards > h4,
@@ -237,7 +236,7 @@ h1 {
   align-items: flex-start;
 }
 
-#profile-review >p {
+#profile-review > p {
   color:aqua;
 }
 
@@ -290,7 +289,51 @@ h1 {
 
 /* ------------------------------ Questions form ------------------------------ */
 
-/* Your CSS code goes here */
+#help-form {
+  background-color: gold;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
+#helpForm-container h2 {
+  font-size: 2.5rem;
+}
+
+#helpForm-container p {
+  color: grey;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+ #email-form {
+  background-color: white;
+  background-image: url(../images/newsletter/icon/mail.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 5%;
+  border-style: none;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.5rem 12rem 1.5rem 2rem;
+  margin-top: 1rem;
+ }
+
+ #subscribe-btn {
+  background-color:#072ac8;
+  color: white;
+  border-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 1.5rem 4rem;
+ }
 
 /* ------------------------------ Footer ------------------------------ */
 
@@ -362,8 +405,15 @@ h1 {
 
 /* Nav bar mobile */
 
+#nav-bar {
+  margin: 0rem 6rem 1rem 6rem;
+}
 
-/* Front Page */
+#nav-links {
+  display: none;
+}
+
+/* Front Page mobile */
 
 #frontPage-section {
 margin: 3rem 2rem 5rem 3rem;
@@ -381,7 +431,7 @@ margin: 3rem 2rem 5rem 3rem;
   color: grey;
   font-weight: 400;
   line-height: 160%;
-  margin: 30px 0 50px 0;
+  margin: 2rem 1rem 3rem 1rem;
 }
 
 #customer-img {
@@ -412,7 +462,7 @@ margin: 3rem 2rem 5rem 3rem;
 }
 
 .api-cards {
-  margin: 0 0rem 1rem 0rem;
+  margin: 0 1rem 1rem 1rem;
   width: 300px;
   height: 470px;
 }
@@ -435,8 +485,18 @@ margin: 3rem 2rem 5rem 3rem;
   margin-bottom: 2rem;
 }
 
+/* Reviews mobile */
+
+#emojis-1,
+#emojis-2 {
+  display: none;
+}
+
 /* services mobile */
 
+#services-card-container {
+  flex-direction: column;
+}
 
 .services-cards {
   width: 300px;
@@ -473,11 +533,15 @@ margin: 3rem 2rem 5rem 3rem;
 
 /* Help form section */
 
- #help-form {
-  background-color: gold;
-  height: 360px;
+#email-form {
+  padding: 1.5rem 1.01rem;
  }
- 
+
+
+ #helpForm-container h2 {
+  font-size: 1.7rem;
+}
+
 
 
 }
