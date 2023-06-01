@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Circle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+
+<!-- circle loader     -->
+
+<div id="lds-ring">
+    <div></div>
+    <div></div>
+    <div></div><div></div>
+</div>
     
 <!-- Navigation bar     -->
 
@@ -19,10 +28,10 @@
             </div>
             <div id="nav-links">
                 <ul>
-                    <a href="#home">Home</a>
+                    <a href="./index.html#">Home</a>
                     <a id="projectLink">Project Page - Simple</a>
-                    <a href="#random-projects-title">Projects</a>
-                    <a href="#services">Services</a>
+                    <a href="./index.html#project-title">Projects</a>
+                    <a href="./index.html#services">Services</a>
                     <a href="./aboutUs.html">About</a>
                 </ul>
             </div>
@@ -37,7 +46,7 @@
 <!-- Cards API Section -->
 
 <section id="projects-section">
-     <div id="post-title">
+    <div id="post-title">
         <!-- <h2>Recent Projects</h2>
     </div>
     <div id="project-subtitle">
@@ -55,17 +64,30 @@
     </div> 
     
     <div id="random-projects-title">
-            <h2>Other Projects</h2>
-            <div id="api-cards-random">    
-           <!-- <div class="api-cards" >
-                    <img class="api-img" src="./images/projects-section/1.jpg" alt="Project x img">
-                    <h3></h3>
-                    <p></p>
-                </div> -->
-            </div>
+        <h2>Other Projects</h2>
+        <div id="api-cards-random">    
+        <!-- <div class="api-cards" >
+                <img class="api-img" src="./images/projects-section/1.jpg" alt="Project x img">
+                <h3></h3>
+                <p></p>
+            </div> -->
+        </div>
     </div>
 </section>
 
+
+<!-- Help Form Section -->
+
+<section id="help-form">
+    <div id="helpForm-container">
+        <h2>Do you have any questions?</h2>
+        <p>Let us help you!</p>
+    </div>
+    <div id="email-container">
+        <input id="email-form"  type="tex" placeholder="Enter your email">
+        <button id="subscribe-btn">Subscribe</button>
+    </div>
+</section>
 
 <!-- Footer Section -->
 
@@ -73,9 +95,7 @@
     <div id="footer-container">
         <div id="footer-logo">
             <img src="./images/logos/circle.svg" alt="Circle logo image">
-        <!-- </div>    
-        <div id="footer-add"> -->
-            <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
+                <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
         </div>
         <div id="footer-links">
                 <a href="error404">Team</a>
@@ -85,16 +105,17 @@
                 <a href="#project-title">Projects</a>
                 <a href="error404">Privacy Policy</a>
         </div>
-    </footer>
-</div>
-
-<div>
+    </div>
+</footer>
+   
+<!-- Scroll to up -->
+    
+<div id="btnContainer">
     <h3 onclick="toUpFunction()" id="scrollBtn" >Scroll to up ↑ </h3>
 </div>
 
 <!-- Scripts zone     -->
 <script src="./js/project.js"></script>
-<!-- <script src="./js/index.js"></script> -->
 <script src="./js/scrollButton.js"></script>
 
 </body>

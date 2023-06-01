@@ -5,16 +5,6 @@
 //         console.log(response)
 //         );
 
-//Funtion to generate random href link into html nav-link "porject - simple" 
-
-const randomLink = () => {
-    let randomNumber = Math.floor(Math.random() * 3 + 1); //Generate random number variable from 1 to 3 to get a random principal post from the "Recent projects" section
-    let linkElement = document.getElementById("projectLink");
-    
-    linkElement.setAttribute('href', `./project.html?p=${randomNumber}`);
-};
-
-
 //Function to get API content, DOM manipulation and onload event
 const getApiContent = () => {
     fetch("https://jsonplaceholder.typicode.com/posts")
@@ -33,4 +23,3 @@ const getApiContent = () => {
     }
     
     window.addEventListener("load", getApiContent);
-    randomLink();

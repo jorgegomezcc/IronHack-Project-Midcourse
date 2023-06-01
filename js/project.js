@@ -7,6 +7,12 @@ let getUrl = new URL(window.location.href);
 //Get the ID value from url
 let getId = getUrl.searchParams.get('p');
 
+//Generate a Date
+let actualDate = new Date;
+let todayDate = actualDate.toDateString()
+
+console.log(todayDate);
+
 //Function with DOM manipulation to show the post from index page
 
 const postFromId = (postId) => { //Put a variable that we put when we call the function 
@@ -18,7 +24,7 @@ const postFromId = (postId) => { //Put a variable that we put when we call the f
 </div>
 <div id="project-subtitle">
 <h2>${data.title}</h2>
-<h3>Completed on </h3>
+<h3>Completed on ${todayDate} </h3>
 </div>
 <div id="api-cards-container-full">
     <div class="api-card-solo" >
@@ -55,15 +61,3 @@ const getApiRandom = () => {
 getApiRandom();
 getApiRandom();
 getApiRandom();
-
-//Funtion to generate random href link into html nav-link "porject - simple" 
-
-const randomLink = () => {
-    let randomNumber = Math.floor(Math.random() * 3 + 1); //Generate random number variable from 1 to 3 to get a random principal post from the "Recent projects" section
-    let linkElement = document.getElementById("projectLink");
-    
-    linkElement.setAttribute('href', `./project.html?p=${randomNumber}`);
-};
-
-randomLink();
-

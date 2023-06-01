@@ -1,20 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300;400;500&display=swap");
 
-/* Colors for use
-#072ac8
-#43d2ff
-#a2d6f9
-#d1edff
-#292e47
-#6b708d
-#f2f4fc
-#ecf7ff
-#ffc600 
-*/
-
-
 :root {
   --primary: #072ac8;
+  --primary: #43d2ff;
+  --primary: #a2d6f9;
+  --primary: #d1edff;
+  --primary: #292e47;
+  --primary: #6b708d;
+  --primary: #f2f4fc;
+  --primary: #ecf7ff;
+  --primary: #ffc600;
+
 }
 
 * {
@@ -46,7 +42,48 @@ footer {
 
 /* ------ CIRCULAR ANIMATION ------ */
 
-/* Your CSS code goes here */
+#lds-ring {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f4fc;
+}
+#lds-ring div {
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 500px;
+  margin: 3px;
+  border: 3px solid #ffc600;
+  border-radius: 50%;
+  animation: spin 2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ffc600 transparent transparent transparent;
+}
+
+#lds-ring div:nth-child(1) {
+  animation-delay: -0.6s;
+}
+#lds-ring div:nth-child(2) {
+  animation-delay: -0.4s;
+}
+#lds-ring div:nth-child(3) {
+  animation-delay: -0.2s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 
 /* ------------------------------ Navbar ------------------------------ */
 
@@ -197,7 +234,8 @@ nav {
 }
 
 /* ------------------------------ Recent projects ------------------------------ */
-#api-cards-container {
+#api-cards-container,
+#api-cards-random {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -206,10 +244,10 @@ nav {
   margin-bottom: 8rem;
 }
 
-.title {
+/* .title {
   color: #292e47;
   margin: 100px 0 75px 0;
-}
+} */
 
 .api-cards > h3,
 .api-cards > p {
@@ -231,7 +269,7 @@ nav {
 
 .api-cards {  
   width: 330px;
-  height: 500px; 
+  height: 510px; 
   background-color: white;
   margin: 0 1.5rem 2rem 0;
   text-align: left;
@@ -367,7 +405,7 @@ nav {
   width: 330px;
   margin: 0 1.5rem 2rem 0;
   text-align: left;
-  height: 250px
+  height: 300px
 }
 
 .sc-image{
@@ -375,7 +413,7 @@ nav {
   height: 70px;
   background-color: #ecf6ff;
   border-radius: 100px;
-  margin: 1rem 0 0 1.7rem;
+  margin: 2rem 0 2rem 1.7rem;
 }
 
 .sc-image img{ 
@@ -394,8 +432,10 @@ nav {
 .services-cards > h4,
 .services-cards > p,
 .services-cards > a {
-  padding: 0.7rem 2rem 0.7rem 1.7rem;
+  padding: 0 2rem 1rem 1.7rem;
 }
+
+
 
 /* ------------------------------ Questions form ------------------------------ */
 
@@ -429,6 +469,7 @@ nav {
 
  #email-form {
   background-color: white;
+  color: #292e47;
   background-image: url(../images/newsletter/icon/mail.svg);
   background-repeat: no-repeat;
   background-position: left;
@@ -436,7 +477,7 @@ nav {
   border-style: none;
   text-align: center;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   padding: 1.5rem 12rem 1.5rem 2rem;
   margin-right: 1rem;
   margin-top: 1rem;
@@ -445,16 +486,19 @@ nav {
  #subscribe-btn {
   background-color:#072ac8;
   color: white;
+  font-weight: 700;
   border-style: none;
   align-items: center;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 500;
   margin-top: 1rem;
   padding: 1.5rem 3rem;
  }
 
+ #subscribe-btn:hover {
+  cursor: pointer;
+ }
 /* ------------------------------ Footer ------------------------------ */
 
 #footer-container {
@@ -466,12 +510,16 @@ nav {
 }
 
 #footer-logo p {
-  font-weight: 200;
-  color: #6b708d;
+  font-weight: 300;
+  color: #292e47;
   padding-top: 1rem;
 }
 #footer-logo img {
   height: 2rem;
+}
+
+#footer-logo img:hover {
+  cursor: pointer;;
 }
 
 #footer-links {
@@ -494,27 +542,37 @@ nav {
 
 /* ------------------------------ Project main ------------------------------ */
 
+#projects-section {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
 .api-card-solo {  
-  width: 80%;
-  height: 50%; 
-  background-color: white;
-  margin: 0 1.5rem 2rem 0;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 .api-img-solo {
-  width: 80%;
-  height: 50%;
+  width: 98%;
+  height: 30rem;
+  margin: 1rem 0.1rem 1rem 0.1rem;
+  object-fit: cover;
 }
 
-#api-cards-random {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 8rem;
+
+.title,
+#random-projects-title > h2 {
+  font-size: 2rem;
+  color: #292e47;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 1rem;
 }
+
+
+
+/* api-cards-random tag already edited in "Recent Projects"  */
+
 
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
@@ -522,7 +580,8 @@ nav {
 
 /* ------------------------------ Form ------------------------------ */
 
-/* Your CSS code goes here */
+
+
 
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */
@@ -578,11 +637,15 @@ nav {
 
 /* Brands responsive */
 
+.hide {
+  display: none;
+}
+
 #brands-img-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  margin: 0 1rem 0rem 1rem;
+  margin: 8rem 1rem 0rem 1rem;
 }
 
 
@@ -590,8 +653,21 @@ nav {
   display: block;
   margin: auto;
   filter: grayscale(0);
-  width: 100px;
+  width: 150px;
   margin-bottom: 2rem;
+}
+
+/* Projects responsive */
+
+.title,
+#random-projects-title {
+  text-align: center;
+}
+
+.title,
+#random-projects-title h2 {
+  font-size: 1.8rem;
+  padding: 0;
 }
 
 }
@@ -629,6 +705,10 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: 0 1rem 0rem 1rem;
+}
+
+#brands-img-container img {
+  width: 120px;
 }
 
 /* Projects mobile */  
@@ -738,10 +818,12 @@ nav {
 }
 
  #helpForm-container h2 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
-
+#email-form {
+  font-size: 0.9rem;
+}
 
 }
 
@@ -766,6 +848,7 @@ nav {
   width: 100%;
 }
 
+#alert-ironhack,
 #alert-fail {
   background-color: red;
   color: white;
@@ -778,13 +861,6 @@ nav {
 }
 
 /* ------------------------------ Sticky scroll bar ------------------------------ */
-
-/* #scroll-btn-container {
-/* display: none; */
-/* position: sticky; */
-
-
-
 
 #scrollBtn {
   background-color: black;
