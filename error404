@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not found!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<!-- Navigation bar     -->
+
+<section id="nav-section">
+    <header id="nav-bar">
+        <nav>
+            <div id="nav-logo">
+                <a href="index.html"><img src="./images/logos/circle.svg" alt="Circle_logo"></a>
+            </div>
+            <div id="nav-links">
+                <ul>
+                    <a href="./index.html#">Home</a>
+                    <a id="projectLink">Project Page - Simple</a>
+                    <a href="./index.html#project-title">Projects</a>
+                    <a href="./index.html#services">Services</a>
+                    <a href="./aboutUs.html">About</a>
+                </ul>
+            </div>
+            <div id="contact-btn">
+                <a href="./contactUs.html">Contac Us</a>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<!-- 404 section -->
+
+<div id='oopss'>
+    <div id='error-text'>
+        <img src="https://cdn.rawgit.com/ahmedhosna95/upload/1731955f/sad404.svg" alt="404">
+        <span>ERROR 404</span>
+        <p class="p-a">The page you were looking for could not be found</p>
+        <a href='./index.html' class="back">... Back to home page</a>
+    </div>
+</div>
+
+<!-- Footer Section -->
+
+<footer>
+    <div id="footer-container">
+        <div id="footer-logo">
+            <img src="./images/logos/circle.svg" alt="Circle logo image">
+                <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
+        </div>
+        <div id="footer-links">
+                <a href="error404">Team</a>
+                <a href="#services">Services</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="error404">Press</a>
+                <a href="#project-title">Projects</a>
+                <a href="error404">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+   
+
+</body>
+</html>
