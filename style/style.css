@@ -36,10 +36,6 @@ footer {
 /* ------------------------------ INDEX html ------------------------------ */
 /* ------------------------------------------------------------------------ */
 
-/* ------------------------------ Splash page ------------------------------ */
-
-/* Your CSS code goes here */
-
 /* ------ CIRCULAR ANIMATION ------ */
 
 #lds-ring {
@@ -84,13 +80,7 @@ footer {
   }
 }
 
-
 /* ------------------------------ Navbar ------------------------------ */
-
-/* #nav-section {
-  margin: 3rem 8rem 4rem 8rem;
-} */
-
 
 nav {
   margin: 5rem auto;
@@ -127,8 +117,6 @@ nav {
 }
 
 /* ------------------------------ Front Page ------------------------------ */
-
-
 
 #frontPage-section {
   display: flex;
@@ -211,29 +199,47 @@ nav {
   padding: 1rem 1rem;
 }
 
-/* ------------------------------ Partners ------------------------------ */
+/* ------------------------------ Brands ------------------------------ */
 
+#brands {
+  overflow: hidden;
+  width: 80%;
+}
 
 #brands-img-container {
+  margin: 6rem 1rem 4rem 1rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 8rem 1rem 8rem 1rem;
+  -webkit-animation: scroll 30s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 #brands-img-container img {
-  width: 137px;
+  width: 180px;
   filter: grayscale(1);
   padding-right: 1rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
 }
 
 #brands-img-container img:hover {
   filter: grayscale(0);
 }
 
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(137px * 7));
+    transform: translateX(calc(-180px * 7));
+  }
+}
+
 /* ------------------------------ Recent projects ------------------------------ */
+
 #api-cards-container,
 #api-cards-random {
   display: flex;
@@ -241,13 +247,8 @@ nav {
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
-
-/* .title {
-  color: #292e47;
-  margin: 100px 0 75px 0;
-} */
 
 .api-cards > h3,
 .api-cards > p {
@@ -290,7 +291,7 @@ nav {
   height: 500px;
   max-width: 1200px;
   position: relative;
-  margin-top: 10rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -435,8 +436,6 @@ nav {
   padding: 0 2rem 1rem 1.7rem;
 }
 
-
-
 /* ------------------------------ Questions form ------------------------------ */
 
 #help-form {
@@ -569,8 +568,6 @@ nav {
   padding-left: 1rem;
 }
 
-
-
 /* api-cards-random tag already edited in "Recent Projects"  */
 
 
@@ -580,11 +577,65 @@ nav {
 
 /* ------------------------------ Form ------------------------------ */
 
+#contactUs-section {
+  padding: 1rem;
+}
 
+.contactUs-container > h1 {
+  font-size: 4rem;
+  color: #292e47;
+}
 
+.email-phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+#email-div,
+#phone-div {
+  width: 49%;
+}
+
+#contactUs-form input{
+  font-size: 1rem;
+  background-color: #bebec0;
+  padding: 1rem 0rem 1rem 1rem;
+  width: 100%;
+  border: none;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#message {
+  font-size: 1rem;
+  background-color: #bebec0;
+  padding: 0.5rem 1rem 1rem;
+  width: 100%;
+  height: 10rem;
+  border: none;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#contactUs-submit-btn {
+  width: 100%;
+  color: #f2f4fc;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #072ac8;
+  border: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+#contactUs-submit-btn:hover {
+  cursor: pointer;
+}
 
 /* ----------------------------------------------------------------------------- */
-/* ------------------------------ About html ------------------------------ */
+/* ------------------------------ About Us html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
 
 /* Your CSS code goes here */
@@ -594,8 +645,10 @@ nav {
 /* --------------------------------------------------------------------------- */
 
 /* ------------------------- Smaller than 990px (tablet) ------------------------- */
+
 @media (max-width: 990px) {
-/* Nav bar responsive */
+
+/* ------------------------- Nav Bar responsive ------------------------- */
 
 nav {
   margin: 2rem 6rem 2rem 6rem;
@@ -609,7 +662,7 @@ nav {
   display: none;
 }
 
-/* Front Page responsive */
+/* ------------------------- FrontPage responsive ------------------------- */
 
 #frontPage-section {
   display: flex;
@@ -635,7 +688,7 @@ nav {
   text-align: center;
 }
 
-/* Brands responsive */
+/* ------------------------- Brands responsive ------------------------- */
 
 .hide {
   display: none;
@@ -645,23 +698,26 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  margin: 8rem 1rem 0rem 1rem;
+  margin: 4rem 1rem 0 1rem;
+  animation: none;
+  -webkit-animation: none;
 }
 
 
 #brands-img-container img {
+  padding-top: 4rem;
   display: block;
   margin: auto;
   filter: grayscale(0);
-  width: 150px;
-  margin-bottom: 2rem;
+  width: 175px;
 }
 
-/* Projects responsive */
+/* ------------------------- Projects responsive ------------------------- */
 
 .title,
 #random-projects-title {
   text-align: center;
+  margin-top: 1rem;
 }
 
 .title,
@@ -673,10 +729,11 @@ nav {
 }
 
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
+
 @media (max-width: 766px) {
 
+/* ------------------------- Front Page mobile ------------------------- */
 
-/* Front Page mobile */
 #frontPage-section div {
   text-align: center;
 }
@@ -698,21 +755,22 @@ nav {
 }
 
 
-/* Brands */
+/* ------------------------- Brands mobile ------------------------- */
 
 #brands-img-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 0 1rem 0rem 1rem;
+  margin: 1rem 1rem 3rem 1rem;
 }
 
 #brands-img-container img {
-  width: 120px;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  width: 130px;
 }
 
-/* Projects mobile */  
-
+/* ------------------------- Projects mobile ------------------------- */ 
 
 #api-cards-container {
   flex-direction: column;
@@ -729,9 +787,7 @@ nav {
   height: 470px;
 }
 
-
-
-/* Reviews mobile */
+/* ------------------------- Review mobile ------------------------- */
 
 #emoji1,
 #emoji2,
@@ -770,7 +826,37 @@ nav {
   margin: 0 1rem 1rem 1rem;
 }
 
-/* footer mobile */
+/* ------------------------- Services mobile ------------------------- */
+
+/* No needed */
+
+/* ------------------------- Help form section mobile ------------------------- */
+
+#email-form {
+  padding: 1.5rem 1rem;
+ }
+
+#email-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#email-form {
+  margin: 0;
+  padding-left: 2rem;
+}
+
+ #helpForm-container h2 {
+  font-size: 1.6rem;
+}
+
+#email-form {
+  font-size: 0.9rem;
+}
+
+/* ------------------------- Footer mobile ------------------------- */
 
   #footer-container {
     flex-direction: column;
@@ -799,30 +885,12 @@ nav {
   }
   
 
-/* Help form section */
+/* ------------------------- Contact Us mobile ------------------------- */
 
-#email-form {
-  padding: 1.5rem 1rem;
- }
 
-#email-container {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#email-form {
-  margin: 0;
-  padding-left: 2rem;
-}
-
- #helpForm-container h2 {
-  font-size: 1.6rem;
-}
-
-#email-form {
-  font-size: 0.9rem;
+.contactUs-container > h1 {
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 }
