@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300;400;500&display=swap");
 
+/* Colors for use
+#072ac8
+#43d2ff
+#a2d6f9
+#d1edff
+#292e47
+#6b708d
+#f2f4fc
+#ecf7ff
+#ffc600 
+*/
+
+
 :root {
   --primary: #072ac8;
 }
@@ -18,10 +31,9 @@ body {
 
 section,
 footer {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
 }
-
 
 
 /* ------------------------------------------------------------------------ */
@@ -38,35 +50,35 @@ footer {
 
 /* ------------------------------ Navbar ------------------------------ */
 
-#nav-section {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
-}
+/* #nav-section {
+  margin: 3rem 8rem 4rem 8rem;
+} */
 
 
 nav {
+  margin: 5rem auto;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  text-align: center;
   align-items: center;
 }
 
 #nav-links a {
   text-decoration: none;
   font-weight: 500;
-  color: grey;
+  color: #6b708d;
   padding-right: 2rem;
 }
 
 #nav-links a:hover {
   cursor: pointer;
-  color: aqua;
+  color:#5594f3;
 }
 
 
 #contact-btn a {
-  background-color: blue;
+  background-color: #072ac8;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -74,40 +86,80 @@ nav {
 }
 
 #contact-btn a:hover{
-  background-color:gray;
+  background-color:#6b708d;
 }
 
 /* ------------------------------ Front Page ------------------------------ */
 
-#frontPage {
+
+
+#frontPage-section {
   display: flex;
-  text-align: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-h1 {
-  font-size: 4rem;
+#frontPage-section > div {
+  width: 47%;
 }
 
-#customer-img {
-   height: 33rem;
+#text-box {
+  margin-bottom: 3rem;
+}
+
+#text-box h1 {
+  color: #292e47;
+  text-align: left;
+  font-size: 3.85rem;
+  margin-bottom: 2rem;
+}
+
+#text-box > p {
+  text-align: left;
+  color: #6b708d;
+  font-weight: 400;
+  line-height: 160%;
+  font-size: 1.33rem;
+  margin: 2rem 0 3rem 0;
+}
+
+#front-page-images {
+  position: relative;
 }
 
 #visa-img {
-  height: 20rem;
+  position: absolute;
+  left: -20%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  max-width: 55%;
 }
 
 #approved-emoji-img {
-  height: 20rem;
+  position: absolute;
+  right: -20%;
+  top: auto;
+  left: auto;
+  bottom: -20%;
+  max-width: 55%;
+}
+
+#customer-img {
+  text-align: center;
+  width: 100%;
 }
 
 #fp-buttons-container {
   display: flex;
+  width: 100%;
   justify-content: center;
-  margin-bottom: 2rem;
 }
 
-#fp-btn-blue {
+#fp-btn-blue{
   background-color:#072ac8;
   color: white;
   text-decoration: none;
@@ -116,7 +168,7 @@ h1 {
 }
 
 #fp-btn-link {
-  color: grey;
+  color: #6b708d;
   text-decoration: none;
   font-weight: 500;
   padding: 1rem 1rem;
@@ -130,11 +182,14 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 8rem 1rem 8rem 1rem;
 }
 
 #brands-img-container img {
-  width: 150px;
+  width: 137px;
   filter: grayscale(1);
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 #brands-img-container img:hover {
@@ -152,9 +207,14 @@ h1 {
 }
 
 .title {
+  color: #292e47;
   margin: 100px 0 75px 0;
 }
 
+.api-cards > h3,
+.api-cards > p {
+  color:  #292e47;
+}
 
 .api-cards > h3,
 .api-cards > h4,
@@ -165,7 +225,7 @@ h1 {
 
 #learn-more {
   font-weight: 500;
-  color: blue;
+  color: #072ac8;
   text-decoration: none;
 }
 
@@ -177,14 +237,6 @@ h1 {
   text-align: left;
 }
 
-/*código en caso de querer "recortar" la cantidad de texto mostrada en cada "card" */
-
-/* .line-limit p {
-  white-space: nowrap ;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
-
 .api-img {
   height: 250px;
   width: 330px;
@@ -193,47 +245,57 @@ h1 {
 /* ------------------------------ Client reviews ------------------------------ */
 
 #customer-box {
-  background-color: #292e47;
   background-image: url(../images/testimonial-section/orbit.png);
+  background-color: #292e47;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 500px;
   max-width: 1200px;
-  
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
   position: relative;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+#testimonials {
+  max-width: 50%;
 }
 
 #testimonials h2 {
-  font-weight: 700;
+  font-weight: 500;
   color: white;
-
+  font-size: 2rem;
+  margin-bottom: 5rem;
 }
 
-#testimonials p:first-child{
-  color: gold;
+#testimonials > p {
+  color: #ffc600;
   font-weight: 300;
   font-size: 1.7rem;
+  margin-bottom: 5rem;
 }
 
-#testimonials p:nth-child(2){
-  color: cornflowerblue;
+#testimonials p:nth-child(1){
+  color: #43d2ff;
   font-weight: 400;
   font-size: 0.9rem;
 }
 
-#testimonials p:nth-child(3) {
+#testimonials p:last-child {
+  color: white;
   font-size: 0.7rem;
   font-weight: 400;
 }
 
-#profile-review div{
+#profile-review {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
+  text-align: left;
 }
 
 #profile-review > p {
@@ -244,14 +306,53 @@ h1 {
   width: 50px;
   height: 50px;
   border-radius: 100px;
+  margin-right: 1rem;
+}
+
+#emoji1,
+#emoji2,
+#emoji3,
+#emoji4 {
+  width: 15%;
+}
+
+#emoji1 {
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  bottom: auto;
+  right: auto;
+}
+
+#emoji2 {
+  position: absolute;
+  bottom: 7%;
+  left: 10%;
+  top: auto;
+  right: auto;
+}
+
+#emoji3 {
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  bottom: auto;
+  left: auto;
+}
+
+#emoji4 {
+  position: absolute;
+  bottom: 7%;
+  right: 10%;
+  top: auto;
+  left: auto;
 }
 
 /* ------------------------------ Services ------------------------------ */
 
-/* #services h2 {
-  font-size: 2rem;
-  margin: 1vmax 10vmax;
-} */
+#services {
+  margin-bottom: 4rem;
+}
 
 #services-card-container  {
   display: flex;
@@ -274,36 +375,52 @@ h1 {
   height: 70px;
   background-color: #ecf6ff;
   border-radius: 100px;
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 0 0 1.7rem;
 }
 
 .sc-image img{ 
-  margin: 1rem 0 0 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.services-cards > h4,
+.services-cards > p {
+  color: #292e47;
+}
+
+.services-cards > p {
+  font-size: 1.1rem;
 }
 
 .services-cards > h4,
 .services-cards > p,
 .services-cards > a {
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding: 0.7rem 2rem 0.7rem 1.7rem;
 }
 
 /* ------------------------------ Questions form ------------------------------ */
 
 #help-form {
-  background-color: gold;
+  background-color: #ffc600;
   height: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
  }
+
+#email-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} 
 
 #helpForm-container h2 {
   font-size: 2.5rem;
 }
 
 #helpForm-container p {
-  color: grey;
+  color: #6b708d;
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -321,6 +438,7 @@ h1 {
   font-size: 1rem;
   font-weight: 500;
   padding: 1.5rem 12rem 1.5rem 2rem;
+  margin-right: 1rem;
   margin-top: 1rem;
  }
 
@@ -328,11 +446,13 @@ h1 {
   background-color:#072ac8;
   color: white;
   border-style: none;
+  align-items: center;
+  text-align: center;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   margin-top: 1rem;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3rem;
  }
 
 /* ------------------------------ Footer ------------------------------ */
@@ -342,13 +462,12 @@ h1 {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin: 8rem 2rem 8rem 2rem;
 }
 
 #footer-logo p {
   font-weight: 200;
-  color: grey;
+  color: #6b708d;
   padding-top: 1rem;
 }
 #footer-logo img {
@@ -365,7 +484,7 @@ h1 {
 
 #footer-links a {
   font-weight: 500;
-  color: blue;
+  color: #072ac8;
   text-decoration: none;
 }
 
@@ -375,7 +494,27 @@ h1 {
 
 /* ------------------------------ Project main ------------------------------ */
 
-/* Your CSS code goes here */
+.api-card-solo {  
+  width: 80%;
+  height: 50%; 
+  background-color: white;
+  margin: 0 1.5rem 2rem 0;
+  text-align: left;
+}
+
+.api-img-solo {
+  width: 80%;
+  height: 50%;
+}
+
+#api-cards-random {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
 
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
@@ -397,57 +536,100 @@ h1 {
 
 /* ------------------------- Smaller than 990px (tablet) ------------------------- */
 @media (max-width: 990px) {
-  /* Your CSS code goes here */
-}
+/* Nav bar responsive */
 
-/* ------------------------- Smaller than 766px (mobile) ------------------------- */
-@media (max-width: 766px) {
-
-/* Nav bar mobile */
-
-#nav-bar {
-  margin: 0rem 6rem 1rem 6rem;
+nav {
+  margin: 2rem 6rem 2rem 6rem;
 }
 
 #nav-links {
   display: none;
 }
 
-/* Front Page mobile */
+#contact-btn {
+  display: none;
+}
+
+/* Front Page responsive */
 
 #frontPage-section {
-margin: 3rem 2rem 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#frontPage div {
-  width: 95%;
-}
-
-#text-box > h1 {
-  font-size: 1.8rem;
-}
-
-#text-box > p {
-  color: grey;
-  font-weight: 400;
-  line-height: 160%;
-  margin: 2rem 1rem 3rem 1rem;
+#frontPage-section div {
+  width: 90%;
+  text-align: center;
 }
 
 #customer-img {
-   height: 220px;
+  width: 80%;
+}
+
+#text-box > p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#text-box > h1 {
+  text-align: center;
+}
+
+/* Brands responsive */
+
+#brands-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 1rem 0rem 1rem;
+}
+
+
+#brands-img-container img {
+  display: block;
+  margin: auto;
+  filter: grayscale(0);
+  width: 100px;
+  margin-bottom: 2rem;
+}
+
+}
+
+/* ------------------------- Smaller than 766px (mobile) ------------------------- */
+@media (max-width: 766px) {
+
+
+/* Front Page mobile */
+#frontPage-section div {
+  text-align: center;
+}
+
+#text-box > h1 {
+  font-size: 2rem;
+}
+
+#text-box > p {
+  font-size: 1rem;
 }
 
 #visa-img {
   display: none;
 }
 
-
 #approved-emoji-img {
   display: none;
 }
 
 
+/* Brands */
+
+#brands-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 1rem 0rem 1rem;
+}
 
 /* Projects mobile */  
 
@@ -467,31 +649,36 @@ margin: 3rem 2rem 5rem 3rem;
   height: 470px;
 }
 
-/* Brands */
 
-#brands-img-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 0 1rem 0rem 1rem;
-}
-
-
-#brands-img-container img {
-  display: block;
-  margin: auto;
-  filter: grayscale(0);
-  width: 100px;
-  margin-bottom: 2rem;
-}
 
 /* Reviews mobile */
 
-#emojis-1,
-#emojis-2 {
+#emoji1,
+#emoji2,
+#emoji3,
+#emoji4 {
   display: none;
 }
 
+#customer-box {
+  justify-content: center;
+  height: 350px;
+}
+
+#testimonials {
+  max-width: 90%;
+}
+
+#testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#testimonials > p {
+
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
 /* services mobile */
 
 #services-card-container {
@@ -509,14 +696,20 @@ margin: 3rem 2rem 5rem 3rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 8rem 1rem 8rem 2rem;
+    margin: 8rem 2rem 10rem 1rem;
   }
+
+  #footer-links {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  text-align: center;
+}
 
   #footer-logo p {
     font-weight: 200;
-    color: grey;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+    color: #6b708d;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
   }
   #footer-logo img {
@@ -525,18 +718,24 @@ margin: 3rem 2rem 5rem 3rem;
     height: 2rem;
   }
   
-  #footer-links {
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
-    text-align: center;
-  }
 
 /* Help form section */
 
 #email-form {
-  padding: 1.5rem 1.01rem;
+  padding: 1.5rem 1rem;
  }
 
+#email-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#email-form {
+  margin: 0;
+  padding-left: 2rem;
+}
 
  #helpForm-container h2 {
   font-size: 1.7rem;
