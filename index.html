@@ -7,6 +7,7 @@
     <title>Circle Agency</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
+
 </head>
 <body>
 
@@ -27,18 +28,21 @@
             <div id="nav-logo">
                 <a href="index.html"><img src="./images/logos/circle.svg" alt="Circle_logo"></a>
             </div>
-            <div id="nav-links">
-                <ul>
-                    <a href="./index.html#">Home</a>
-                    <a id="projectLink">Project Page - Simple</a>
-                    <a href="./index.html#project-title">Projects</a>
-                    <a href="./index.html#services">Services</a>
-                    <a href="./aboutUs.html">About</a>
-                </ul>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+            <div id="nav-links" class="menu">
+                    <li><a href="./index.html#">Home</a></li>
+                    <li><a id="projectLink">Project Page - Simple</a></li>
+                    <li><a href="./index.html#project-title">Projects</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./aboutUs.html">About</a></li>
             </div>
             <div id="contact-btn">
                 <a href="./contactUs.html">Contac Us</a>
             </div>
+            </label>
         </nav>
     </header>
 </section>
