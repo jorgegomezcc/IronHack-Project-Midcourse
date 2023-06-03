@@ -1055,7 +1055,7 @@ nav {
 }
 
 .api-cards > p {
-  margin-bottom: 0.8rem;
+  padding: 0.5rem 1rem 0.7rem 1rem;
 }
 
 /* ------------------------- Project html responsive ------------------------- */
