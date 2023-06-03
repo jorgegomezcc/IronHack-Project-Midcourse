@@ -58,19 +58,6 @@ const subscribeBtn = () => {
     })
 }
 
-//----------- LOADER SPINNER -----------//
-
-// Function to loading effect
-const loadSpinner = () => {
-    const loading = document.getElementById('lds-ring');
-    setTimeout(() => {
-      loading.style.display = 'none';    
-    }, 1800);
-  };
-
-  //Add listener, when load the page call the function
-  window.addEventListener("load", loadSpinner)
-
 //----------- RANDOMIZE HREF LINK IN "PROJECT-SIMPLE" NAV LINK -----------//
 
   //Funtion to generate random href link
