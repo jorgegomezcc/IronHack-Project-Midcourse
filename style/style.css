@@ -95,7 +95,8 @@ nav {
   text-decoration: none;
   font-weight: 500;
   color: #6b708d;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 #nav-links a:hover {
@@ -945,6 +946,8 @@ nav {
 
 #nav-links a {
     color: #f2f4fc;
+    padding-right: 0;
+    padding-left: 0;
 }  
 
 
