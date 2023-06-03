@@ -1286,6 +1286,18 @@ nav {
   font-size: 2.5rem;
 }
 
+/* ------------------------- About Us mobile------------------------- */
+
+#podcasts > h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+#videos > h2 {
+  font-size: 1.5rem;
+}
+
 /* ------------------------- 404 mobile ------------------------- */
 
 #oopss {
