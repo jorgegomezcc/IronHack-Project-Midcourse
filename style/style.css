@@ -927,6 +927,13 @@ nav {
 
 @media (max-width: 990px) {
 
+  /* ------------------------- Spinner responsive ------------------------- */
+
+  #lds-ring div {
+    width: 300px;
+    height: 300px;
+  }
+
 /* ------------------------- Nav Bar responsive ------------------------- */
 
 .menu-button-container {
