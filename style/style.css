@@ -84,7 +84,7 @@ footer {
 
 nav {
   margin: 5rem auto;
-  width: 80%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -610,6 +610,30 @@ nav {
   padding-right: 0.8rem;
 }
 
+#post-title > h2 {
+  font-size: 3.5rem;
+  color:#292e47;
+}
+
+#project-subtitle {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  width: 98%;
+}
+
+#project-subtitle > h2 {
+  color:#6b708d;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+#project-subtitle > h3 {
+  color:#6b708d;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 .api-card-solo {  
   display: flex;
   justify-content: space-between;
@@ -749,9 +773,152 @@ nav {
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About Us html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
+#aboutUsTitle {
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+}
 
-/* Your CSS code goes here */
+#cards-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60rem;
+  width: 100%;
+}
 
+#about-cards-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 60rem;
+  width: 90%;
+}
+
+.about-cards {
+  width: 23rem;
+  height: 30rem;
+  perspective: 1000px;
+  margin: 2rem 0rem;
+}
+
+.img-front {
+  transform: rotateY(0deg);
+}
+
+.img-back {
+  color: white;
+  padding: 2rem;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  background-color: #3a3a3a;
+  transform: rotateY(180deg);
+}
+
+#card1 .img-front {
+  background-image: url("/images/AboutUs-section/young-man.png");
+  height: 30rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+#card2 .img-front {
+  background-image: url("/images/AboutUs-section/young-woman.png");
+  height: 30rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  background-size: cover;
+}
+
+.img-front > h1 {
+  text-shadow: 1rem 0.7rem 0.25rem rgba(0, 0, 0, 0.5)
+}
+
+.img-back > h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.img-back > p {
+  font-size: 1rem;
+}
+
+.img-front,
+.img-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+  border-radius: 20px;
+}
+
+.about-cards:hover .img-front {
+  transform: rotateY(180deg);
+}
+
+.about-cards:hover .img-back {
+  transform: rotateY(0deg);
+}
+
+#videos {
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#videos > h2 {
+  font-size: 2.5rem;
+}
+
+#videos article {
+  width: 100%;
+  max-width: 60rem;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#videos iframe {
+  width: 90%;
+  max-width: 36rem;
+  height: 20rem;
+}
+
+.videoTags p {
+  padding: 0.5rem 0rem;
+}
+
+
+.videoTags h4 {
+  padding: 0.5rem 0rem;
+}
+
+#podcasts {
+  width: 90%;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#podcasts > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#podcasts > iframe {
+  max-width: 36rem;
+}
 /* --------------------------------------------------------------------------- */
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
 /* --------------------------------------------------------------------------- */
@@ -768,6 +935,7 @@ nav {
 
 nav {
     margin: 2rem auto;
+    width: 80%;
   }
 
 #nav-links a {
@@ -884,6 +1052,30 @@ nav {
   padding: 0;
 }
 
+/* ------------------------- Project html responsive ------------------------- */
+
+#post-title {
+  margin: auto;
+}
+
+#post-title > h2 {
+  font-size: 2.5rem;
+}
+
+#project-subtitle > h2 {
+  font-size: 1.3rem;
+}
+
+#project-subtitle > h3 {
+  font-size: 0.9rem;
+}
+
+/* ------------------------- About Us responsive ------------------------- */
+
+#card1 .img-back > p {
+  font-size: 0.9rem;
+}
+
 /* ------------------------- 404 responsive ------------------------- */
 
 #oopss {
@@ -966,6 +1158,20 @@ nav {
   margin: 0 1rem 1rem 1rem;
   width: 300px;
   height: 470px;
+}
+
+/* ------------------------- Project html mobile ------------------------- */
+
+#post-title > h2 {
+  font-size: 1.8rem;
+}
+
+#project-subtitle > h2 {
+  font-size: 0.8rem;
+}
+
+#project-subtitle > h3 {
+  font-size: 0.6rem;
 }
 
 /* ------------------------- Review mobile ------------------------- */

@@ -23,12 +23,9 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <img src="./images/readMe/wu.png" alt="Logo" width="80" height="80">
-  <h3 align="center">Circle Landing Agency Website</h3>
-  <a href="https://midterm-project.vercel.app/">Visit Website</a>
-</div>
+
+<!-- No tengo logo de marca personal (tendré que crearme uno) por lo que no añado ninguno-->
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -69,11 +66,21 @@ En mi caso personal, el proyecto será trabajado en varios repositorios debido a
 
 Todos los commits serán registrados, incluso si son hechos desde otro repositorio.
 
+Repositorio del proyecto final: https://github.com/jorgegomezcc/IronHack-Project-Midcourse
+
+Repositorio de pruebas del proyecto: https://github.com/jorgegomezcc/IH-BC-Win/tree/main/Proyecto-midcourse
+
+Proyecto final alojado en Vercel: https://iron-hack-project-midcourse-qksv8cuy6-jorgegomezcc.vercel.app/
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
 
 Este proyecto esta desarrollado con HTMl, CSS y JavaScript sin hacer uso de frameworks.
+
+Codigo escrito y editado con VSCODE
+
+Trabajado tanto en Mac como en Windows
 
 El Proyecto esta estructurado con las carpetas correspondientes a cada tipo de archivo.
 
@@ -83,8 +90,76 @@ El Proyecto esta estructurado con las carpetas correspondientes a cada tipo de a
 
 #### Backlog
 
+Todos los cambios se han de poder seguir y ver tanto en el repositorio de pruebas como el final, algun código ha sido testado en local y no subido en comit pero ha sido añadido al road map
+
 #### Day One
-Road map será seguido por trello, pdte actualiazr url
+
+X Analisis del proyecto 
+X Estructuracion de HTML
+
+#### Day Two
+
+X Estructuracion del proyecto
+X Proximos pasos, JS o CSS
+
+X Investigacion funciones JS
+X Creacion de primeras funciones con JS
+
+X Testeo
+
+#### Day Three
+
+X Investigacion funciones JS
+x Implementacion nuevas funciones con JS
+
+X Creacion de CSS y primeros pasos (no responsive)
+
+X Testeo
+
+#### Day Four
+
+X investigacion CSS 
+X Editar CSS (segunda edicion de CSS (empezando responsive))
+
+X Investigacion funciones JS
+x Implementacion nuevas funciones con JS
+
+X Testeo
+
+#### Day five
+
+X Repaso y limpieza del Codigo general
+
+X Editar CSS (Tercera Edicion de CSS (responsive y no responsive))
+
+X Investigacion funciones JS
+x Implementacion nuevas funciones con JS
+
+X Testeo
+
+#### Day Six
+
+X Editar CSS (Cuarta edicion de CSS (terminando boiler básico))
+
+X Implementacion nuevas funciones con JS (edicion funciones con JS (terminando boiler basico))
+
+#### Day Seven
+
+X Limpieza de código y comprobacion de boiler básico
+
+X Investigacion boiler Avanzado
+
+X Añadir elementos boiler avanzado (CSS y JS)
+
+#### Last Day
+
+X Implementacion de la pagina opcional del boiler avanzado de "About Us"
+
+X Limpieza final de código
+
+X Edicion de algunos cambios en HTML
+
+X Subida y comprobación de web final
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -104,7 +179,9 @@ Estudiante de IronHack y próximo Front-End Developer.
 
 Principalmente a Diego por ser la persona encargada de formarnos como desarrolladores y quien nos apoya en el camino.
 
-A Gabriel Beraducci, compañero de clase, de trabajo y amigo personal con quien sigo el camino y me ayuda constantemente a avanzar.
+A Gabriel Beraducci, compañero de clase, de trabajo y amigo personal con quien sigo el camino de este bootcamp y me ayuda constantemente a avanzar.
+
+A todos los compañeros de clase que con sus dudas y aportaciones ayudan al porvenir de este curso.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,3 +190,15 @@ A Gabriel Beraducci, compañero de clase, de trabajo y amigo personal con quien 
 El principal desafio, es como no puede ser de otra forma, el ser el primer desarrollo "desde cero" y "funcional" al que nos enfrentamos.
 
 Como tal, y a pesar de conocer las bases de la tecnologia con la que desarrollamos el proyecto, es un desafio poner en marcha dichos conocimientos adquiridos.
+
+El CSS ha resultado ser bastante mas complicado de lo que pensaba en un principio, ha sido una lucha constante de exitos y frustraciones y sobre todo horas y horas de codigo e investigacion.
+
+El trabajar con 2 repositorios diferentes uno de "prueba" donde iba haciendo fases de testeo y otro en el que subia el codigo ya testado y avanzaba en el proyecto final
+
+## ERRORES
+
+El mayor error cometido durante el proyecto, ha sido sin duda empezar el css sin el responsive primero, problema silventado en la segunda edicion del css en el que empecé a trabajar con el css con la premisa de "mobile first".
+
+Tuve algunos (varios) errores al intentar fusionar o implementar funciones de JS que con investigacion y testeo se fueron solventando.
+
+Un road map algo desorganizado que no seguí a pie de la letra.

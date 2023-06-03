@@ -8,7 +8,7 @@ let btnToUp = document.getElementById("scrollBtn");
 window.onscroll = function() {scrollFunction()};
 
 const scrollFunction = () => {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
         btnToUp.style.display = "block";
         console.log("test unhide scrollbtn");
     }else {
@@ -33,23 +33,6 @@ const subscribeBtn = () => {
         top:0,
     })
 }
-
-//----------- LOADER SPINNER -----------//
-
-// Function to loading effect
-const loadSpinner = () => {
-    const loading = document.getElementById('lds-ring');
-    if (screen.width <= 990) {
-        loading.style.display = 'none';
-    }else {
-        setTimeout(() => {
-            loading.style.display = 'none';    
-          }, 1200);
-    }
-  };
-
-  //Add listener, when load the page call the function
-  window.addEventListener("load", loadSpinner)
 
 //----------- RANDOMIZE HREF LINK IN "PROJECT-SIMPLE" NAV LINK -----------//
 
