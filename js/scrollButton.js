@@ -10,7 +10,7 @@ window.onscroll = function() {scrollFunction()};
 const scrollFunction = () => {
     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
         btnToUp.style.display = "block";
-        console.log("test unhide scrollbtn");
+       //  console.log("test unhide scrollbtn");
     }else {
         btnToUp.style.display = "none";
     }
