@@ -70,7 +70,7 @@ Repositorio del proyecto final: https://github.com/jorgegomezcc/IronHack-Project
 
 Repositorio de pruebas del proyecto: https://github.com/jorgegomezcc/IH-BC-Win/tree/main/Proyecto-midcourse
 
-Proyecto final alojado en Vercel: https://iron-hack-project-midcourse-qksv8cuy6-jorgegomezcc.vercel.app/
+Proyecto final alojado en Vercel: https://iron-hack-project-midcourse-git.vercel.app/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
