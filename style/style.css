@@ -317,11 +317,6 @@ nav {
 .api-cards > h3,
 .api-cards > p {
   color:  #292e47;
-}
-
-.api-cards > h3,
-.api-cards > h4,
-.api-cards > p {
   padding: 0.5rem 1rem 1rem 1rem;
 }
 
@@ -1057,6 +1052,10 @@ nav {
 #random-projects-title h2 {
   font-size: 1.8rem;
   padding: 0;
+}
+
+.api-cards > p {
+  margin-bottom: 0.8rem;
 }
 
 /* ------------------------- Project html responsive ------------------------- */
