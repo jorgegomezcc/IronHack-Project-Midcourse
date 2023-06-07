@@ -72,6 +72,8 @@ Repositorio de pruebas del proyecto: https://github.com/jorgegomezcc/IH-BC-Win/t
 
 Proyecto final alojado en Vercel: https://iron-hack-project-midcourse-git.vercel.app/
 
+Presentacion del proyecto: <a href="https://www.canva.com/design/DAFlD_zXu-I/Dat6azVEliaRMIQAdEnoAQ/view?utm_content=DAFlD_zXu-I&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"> Presentacion en Canva </a>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
